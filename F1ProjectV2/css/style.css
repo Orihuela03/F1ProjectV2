@@ -1,0 +1,220 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  height: 56px;
+  width: 100vw;
+  background-color: red;
+  z-index: 2500;
+}
+
+.principal-title {
+  text-align: center;
+  color: red;
+  font-style: italic;
+
+}
+
+#info-f1 {
+  margin-top: calc(56px + 3em);
+  display: flex;
+  align-items: center;
+}
+
+#info-f1 p{
+  margin-right: 20px;
+  text-align: justify;
+  margin-left: 1em;
+}
+
+#info-f1 img{
+  height: 30vh;
+}
+
+.title {
+  margin-top: 5em;
+  text-align: center;
+  color: red;
+  font-style: italic;
+
+}
+
+#bootstrap-container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  width: 100%;
+}
+
+
+
+.title-gallery {
+  width: 100vw;
+  height: 56px;
+  color: red;
+}
+
+#team-image-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  background-color: transparent;
+  padding-top: 40px;
+}
+
+#livery-image-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  background-color: transparent;
+  padding-top: 40px;
+}
+
+#driver-image-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  background-color: transparent;
+  padding-top: 40px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.teams-image:hover .overlay {
+  opacity: 1;
+}
+
+.livery-image:hover .overlay {
+  opacity: 1;
+}
+
+.driver-image:hover .overlay {
+  opacity: 1;
+}
+
+.teams-image {
+  position: relative;
+  width: 90vw;
+  /* max-width: 250px; */
+}
+
+.livery-image {
+  position: relative;
+  width: 90vw;
+  max-width: 250px;
+  margin: 5px;
+}
+
+.driver-image {
+  position: relative;
+  width: 90vw;
+  /* max-width: 250px; */
+  margin: 5px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: red;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 56px;
+}
+
+.left-side {
+  border-style: double;
+  border-radius: 12px;
+  padding: 1em;
+  margin-top: 1em;
+  background-color: lightcoral;
+}
+
+.left-side:hover {
+  border-style: initial;
+}
+
+#model-error {
+  color: red;
+  visibility: hidden;
+}
+
+#brand-error {
+  color: red;
+  visibility: hidden;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .driver-image {
+    position: relative;
+    width: 40vw;
+  }
+
+  .teams-image {
+    position: relative;
+    width: 40vw;
+  }
+
+  .livery-image {
+    position: relative;
+    width: 40vw;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .driver-image {
+    position: relative;
+    width: 30vw;
+  }
+
+  .teams-image {
+    position: relative;
+    width: 30vw;
+  }
+
+  .livery-image {
+    position: relative;
+    width: 30vw;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
